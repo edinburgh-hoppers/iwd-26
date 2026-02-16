@@ -1,11 +1,11 @@
 ---
 ---
 
-$languid-lavender: #e6d7feff;
-$indigo: #3c0494ff;
+$languid-lavender: #EDE0FF;
+$indigo: #451C7A;
 $light-cyan: #cbf1f7ff;
 $lighter-cyan: rgb(223, 243, 246);
-$lighter-purple: rgb(236, 223, 246);
+$lighter-purple: #EDE0FF;
 $sunglow: #ffcb0eff;
 $princeton-orange: #fd8835ff;
 $light-grey: rgb(249, 249, 249);
@@ -59,7 +59,7 @@ nav{
   align-items: flex-start;
   color: $indigo;
   font-size: 15pt;
-  transition: background-color 0.15s;
+  transition: background-color 0.3s;
   .right, .left{
     height: inherit;
     display: flex;
