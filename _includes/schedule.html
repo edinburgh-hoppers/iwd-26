@@ -1,11 +1,14 @@
 
-
-<div id = "schedule" class="schedule  container-fluid">
-    <div class="wrapper">
-        <h1>Schedule</h1>
-        <div id="events">
-        <!--<h3 style=" width: 60vw; padding: 20px;  color: #3c0494ff; background-color: rgba(255, 203, 14, 0.3);">The schedule will be updated soon.</h3> -->
-        </div>
-
+<div id="events">
+  {% for event in site.data.schedule %}
+    <div class="row">
+      <div class="col-3 eventDate">
+        {{ event.time }}
+      </div>
+      <div class="col-9 event">
+        <h4 class="eventTitle">{{ event.title }}</h4>
+        <p>{{ event.description }}</p>
+      </div>
     </div>
+  {% endfor %}
 </div>
