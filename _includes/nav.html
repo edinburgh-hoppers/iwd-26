@@ -1,6 +1,13 @@
 {% assign nav-items = site.data.nav %}
 
 <nav class="sticky-top mt-3">
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
   <div class="left">
   {% for item in nav-items %}
     {% if item.left %}
@@ -8,7 +15,9 @@
     {% endif %}
   {% endfor %}
 </div>
+  
   <img src="{{ '/assets/img/hoppers-logo-nav.png' | relative_url }} ">
+  
 <div class="right">
   {% for item in nav-items %}
     {% if item.right %}
@@ -56,5 +65,16 @@
       // });
     }
   }
+
+  // Hamburger toggle
+    var hamburger = document.getElementById("hamburger");
+    var left = document.querySelector(".left");
+    var right = document.querySelector(".right");
+
+    hamburger.addEventListener("click", function () {
+      left.classList.toggle("mobile-open");
+      right.classList.toggle("mobile-open");
+      hamburger.classList.toggle("active");
+    });
 
 </script>
