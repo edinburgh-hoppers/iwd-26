@@ -185,7 +185,8 @@ nav{
 .hero-section{
   height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 10vh 6vw;
+  box-sizing: border-box;
   display: grid;
   place-content: center;
   position: relative;
@@ -196,7 +197,7 @@ nav{
   }
 
   img {
-    width: 35vw;
+    width: 45vw;
     max-width: 400px;
     min-width: 220px;
     height: auto;
@@ -244,6 +245,7 @@ nav{
     outline: none;
   }
   @media (max-width: 700px) {
+    padding: 6vh 5vw;
     .background-wrapper{
       display: grid;
       grid-template-columns: 1fr;
