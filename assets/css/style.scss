@@ -196,8 +196,9 @@ nav{
   }
 
   img {
-    width: 400px;
+    width: 450px;
     height: auto;
+    align-items: center;
   }
 
   a{
@@ -224,11 +225,11 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr; 
     place-content: center;
-    align-items:center;
+    align-items: center;
   }
 
   .text-wrapper{
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
 
