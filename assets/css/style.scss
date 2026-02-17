@@ -11,49 +11,8 @@ $princeton-orange: #fd8835ff;
 $light-grey: rgb(249, 249, 249);
 $purple: #501973;
 
-/* ---------------------------
-   Global Font Setup
----------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Funnel+Display:wght@300..800&family=Orbitron:wght@400..900&display=swap');
-
-html, body {
-  font-family: 'Electrolize', sans-serif; /* default body text */
-  color: $indigo;
-  scroll-behavior: smooth;
-}
-
-/* Headlines */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Orbitron', sans-serif;
-  color: $indigo;
-  margin: 0;
-  font-weight: 700;
-}
-
-/* Buttons & links */
-a, .btn {
-  font-family: 'Funnel Display', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 600;
-}
-
-/* Optional: small refinements */
-p, li {
-  line-height: 1.6;
-  font-size: 1.1rem;
-}
-
-h1 {
-  font-size: 3rem;
-  letter-spacing: 0.03em;
-}
-
-h2 {
-  font-size: 2rem;
-  letter-spacing: 0.025em;
-}
-
 
 * {
   box-sizing: border-box;
