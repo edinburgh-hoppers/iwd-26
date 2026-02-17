@@ -1,17 +1,17 @@
 - name: Jane Street
   logo: jane-street.png
   website: https://www.janestreet.com/
-  width: 100px
+  width: 140px
 
 - name: Optiver
   logo: optiver.png
   website: https://optiver.com/
-  width: 220px
+  width: 180px
 
 - name: People's Postcode Lottery
   logo: peoples-postcode-lottery.png
   website: https://www.postcodelottery.co.uk/
-  width: 220px
+  width: 120px
 
 - name: Skyscanner
   logo: skyscanner.png
