@@ -1,5 +1,29 @@
 - date:
-  time:
-  title:
+  time: 11:00
+  title: Arrival
   description:
   image:
+
+- time: 11:30
+  title: Introduction & Keynote
+
+- time: 12:15
+  title: Lightning Talks
+
+- time: 13:00
+  title: Lunch
+
+- time: 13:30
+  title: Workshop
+
+- time: 14:30
+  title: Lightning Talks
+
+- time: 15:30
+  title: Speed Networking
+
+- time: 16:30
+  title: Raffle & Closing
+
+- time: 17:00
+  title: Nibbles & Networking
