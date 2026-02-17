@@ -91,12 +91,13 @@ nav{
     width: max-content;
     height: 70%;
     border-radius: 20px;
+    position: relative;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
     &:hover{
-      text-decoration: none;
-      color: $indigo;
-      background-color: $lighter-purple;
-      transition: background-color 0.1s;
-      // text-shadow: 1px 1px 0px #aaa;
+     text-decoration: none;
+     color: $indigo;
+     background-color: rgba(172, 158, 255, 0.6);
+     transform: translateY(-2px);
     }
   }
 
