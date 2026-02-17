@@ -246,22 +246,25 @@ nav{
   }
 
   a{
-    border: none; 
-    border-radius: 6px;
-    letter-spacing: 0.5rem;
-    text-transform: uppercase;
+    border: none;
     background-color: $indigo;
     font-weight: 600;
-    font-size: 0.85rem;
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 12px 20px;
     margin: 10px;
+
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+
+    transition: background-color 0.25s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease;
+    }
+
+  a:hover{
+    border-radius: 20px;
     transition: border-radius 0.2s;
-    &:hover{
-      border-radius: 10px;
-      transition: border-radius 0.2s;
-    
     }
 
     a:not([href]){
