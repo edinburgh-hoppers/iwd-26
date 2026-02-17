@@ -71,14 +71,14 @@
   }
 
   // Hamburger toggle
-    var hamburger = document.getElementById("hamburger");
-    var left = document.querySelector(".left");
-    var right = document.querySelector(".right");
+    document.addEventListener("DOMContentLoaded", function () {
+      var hamburger = document.getElementById("hamburger");
+      var navLinks = document.querySelector(".nav-links");
 
-    hamburger.addEventListener("click", function () {
-      left.classList.toggle("mobile-open");
-      right.classList.toggle("mobile-open");
-      hamburger.classList.toggle("active");
+      hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("mobile-open");
+        hamburger.classList.toggle("active");
+      });
     });
 
 </script>
