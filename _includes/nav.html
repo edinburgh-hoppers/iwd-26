@@ -1,34 +1,24 @@
 {% assign nav-items = site.data.nav %}
 
 <nav class="sticky-top mt-3">
-
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <div class="nav-links">
-
-    <div class="left">
-      {% for item in nav-items %}
-        {% if item.left %}
-          <a href='{{ item.href }}' style='font-weight: bold'>{{ item.text }}</a>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="right">
-      {% for item in nav-items %}
-        {% if item.right %}
-          <a href='{{ item.href }}' style='font-weight: bold'>{{ item.text }}</a>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-  </div>
-
+  
+  <div class="left">
+  {% for item in nav-items %}
+    {% if item.left %}
+      <a href='{{ item.href }}' style = 'font-weight: bold'>{{item.text}}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+  
   <img src="{{ '/assets/img/hoppers-logo-nav.png' | relative_url }} ">
+  
+<div class="right">
+  {% for item in nav-items %}
+    {% if item.right %}
+      <a href='{{ item.href }}' style = 'font-weight: bold'>{{ item.text }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
 
 </nav>
 
@@ -69,16 +59,5 @@
       // });
     }
   }
-
-  // Hamburger toggle
-    document.addEventListener("DOMContentLoaded", function () {
-      var hamburger = document.getElementById("hamburger");
-      var navLinks = document.querySelector(".nav-links");
-
-      hamburger.addEventListener("click", function () {
-        navLinks.classList.toggle("mobile-open");
-        hamburger.classList.toggle("active");
-      });
-    });
 
 </script>
