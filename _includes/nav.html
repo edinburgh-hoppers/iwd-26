@@ -7,24 +7,28 @@
     <span></span>
     <span></span>
   </div>
-  
-  <div class="left">
-  {% for item in nav-items %}
-    {% if item.left %}
-      <a href='{{ item.href }}' style = 'font-weight: bold'>{{item.text}}</a>
-    {% endif %}
-  {% endfor %}
-</div>
-  
+
+  <div class="nav-links">
+
+    <div class="left">
+      {% for item in nav-items %}
+        {% if item.left %}
+          <a href='{{ item.href }}' style='font-weight: bold'>{{ item.text }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="right">
+      {% for item in nav-items %}
+        {% if item.right %}
+          <a href='{{ item.href }}' style='font-weight: bold'>{{ item.text }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+
   <img src="{{ '/assets/img/hoppers-logo-nav.png' | relative_url }} ">
-  
-<div class="right">
-  {% for item in nav-items %}
-    {% if item.right %}
-      <a href='{{ item.href }}' style = 'font-weight: bold'>{{ item.text }}</a>
-    {% endif %}
-  {% endfor %}
-</div>
 
 </nav>
 
