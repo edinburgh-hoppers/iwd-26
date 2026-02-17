@@ -599,3 +599,74 @@ nav{
         border-bottom-right-radius: 10px;
       }
     }
+
+/* Hamburger base */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  z-index: 200;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: $indigo;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+/* Animate into X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile behavior */
+@media (max-width: 700px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    height: auto;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .left.mobile-open,
+  .right.mobile-open {
+    display: flex;
+  }
+
+  nav a {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  nav img {
+    height: 60px;
+    width: 60px;
+  }
+}
