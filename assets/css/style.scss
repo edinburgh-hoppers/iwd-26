@@ -51,7 +51,7 @@ p{
   background-color: rgba(255,255,255,0.5);
 
   &:hover{
-    box-shadow: 0px 18px 145px $indigo;
+    box-shadow: 0px 18px 45px $indigo;
   }
 }
 
@@ -298,7 +298,8 @@ nav{
   .row{
     padding: 5px 0;
     &:hover{
-      background-color: rgba($lighter-purple, 0.5);
+      background-color: rgba($lighter-purple, 0.15);
+      border-radius: 6px;
     }
   }
 
