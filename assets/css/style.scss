@@ -67,6 +67,9 @@ nav{
   color: $indigo;
   font-size: 15pt;
   transition: background-color 0.3s;
+  backdrop-filter: blur(8px);
+  background-color: rgba(218, 212, 255, 0.85);
+  
   .right, .left{
     height: inherit;
     display: flex;
@@ -202,7 +205,13 @@ nav{
   position: relative;
   overflow: hidden;
 
+  p {
+    opacity: 0.85;
+  }
+
   h1{
+    letter-spacing: 0.04em;
+    font-weight: 700;
     font-size: 40pt;
   }
 
@@ -215,15 +224,19 @@ nav{
 
   a{
     border: none; 
+    border-radius: 6px;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
     background-color: $indigo;
     font-weight: 600;
+    font-size: 0.85rem;
     color: white;
     text-decoration: none;
     padding: 10px;
     margin: 10px;
     transition: border-radius 0.2s;
     &:hover{
-      border-radius: 20px;
+      border-radius: 10px;
       transition: border-radius 0.2s;
     
     }
