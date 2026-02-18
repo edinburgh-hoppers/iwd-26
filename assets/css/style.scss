@@ -52,6 +52,10 @@ p{
   transition: cubic-bezier(0.22, 1, 0.36, 1), transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   background-color: rgba(255,255,255,0.5);
 
+  h1 {
+    margin-bottom: 30px;
+  }
+
   &:hover{
     box-shadow: 0 16px 40px $indigo;
     transform: translateY(-4px);
