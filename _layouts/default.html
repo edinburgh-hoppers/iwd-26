@@ -6,16 +6,22 @@
   {% include head.html %}
   </head>
   <body>
+    <div class="hero-floating-shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+    
   {% include nav.html %}
-
-  <div class="">
-    <div class="hero-section">
-      <div class="background-wrapper">
-        <img src="{{ '/assets/img/hoppers-logo.png' | relative_url }}">
-        <div class="text-wrapper">
-          <h1 class="mb-3 text-center">
+    
+    <div class="">
+      <div class="hero-section">
+        <div class="background-wrapper">
+          <img src="{{ '/assets/img/hoppers-logo.png' | relative_url }}">
+          <div class="text-wrapper">
+            <h1 class="mb-3 text-center">
               {{ page.title }}
-          </h1>
+            </h1>
 
           {% if page.subtitle %}
             <h2 class="text-center mb-3">{{ page.subtitle }}</h2>
