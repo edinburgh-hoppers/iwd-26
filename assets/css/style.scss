@@ -145,7 +145,7 @@ nav{
     color: $indigo;
     &:hover{
       text-decoration: none;
-      color: $indigo;
+      color: $lighter-purple;
       background-color: $lighter-purple;
       transition: background-color 0.1s;
     }
@@ -269,7 +269,7 @@ nav{
 
     transition: background-color 0.25s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
   }
-
+  
   a::after {
     content: "";
     position: absolute;
@@ -289,28 +289,27 @@ nav{
     width: 60%;
     left: 20%;
   }
-
+  
   a:active{
     transform: translateY(-1px);
   }
-
-
+  
   a:not([href]){
     color: white;
   }
-
-.background-wrapper{
+  
+  .background-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr; 
     place-content: center;
     align-items: center;
   }
-
-.text-wrapper{
+  
+  .text-wrapper{
     display: flex;
     flex-direction: column;
   }
-
+  
   .reg-buttons{
     display: flex;
     place-content: center;
@@ -323,6 +322,7 @@ nav{
   
   @media (max-width: 700px) {
     padding: 6vh 5vw;
+  
     .background-wrapper{
       display: grid;
       grid-template-columns: 1fr;
@@ -561,8 +561,8 @@ nav{
       border-bottom-right-radius: 10px;
     }
   }
- 
-  .speakers {
+
+.speakers {
 
     wrapper {
         display: flex;
