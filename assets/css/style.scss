@@ -47,6 +47,13 @@ body{
   100% { background-position: 0% 50%; }
 }
 
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 p{
   font-size: 14pt;
 }
