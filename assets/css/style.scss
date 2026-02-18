@@ -74,18 +74,21 @@ p{
 
 nav{
   z-index: 100;
-  height: 70px;
   width: 100vw;
+
+  height: 70px;
   display: grid;
   grid-template-columns: 5fr 1fr 5fr;
   grid-template-areas: 'left logo right';
   justify-content: center;
   align-items: flex-start;
+  
   color: $lighter-purple;
   font-size: 15pt;
-  transition: background-color 0.3s;
+  
+  transition: background-color 0.4s ease;
   backdrop-filter: blur(8px);
-  background-color: rgba(218, 212, 255, 0.0);
+  background-color: rgba(255, 255, 255, 0.0);
   
   .right, .left{
     height: inherit;
@@ -113,7 +116,7 @@ nav{
     &:hover{
      text-decoration: none;
      color: $indigo;
-     background-color: $lighter-purple;
+     background-color: rgba(172, 158, 255, 0.6);
      transform: translateY(-2px);
     }
 
@@ -196,6 +199,7 @@ nav{
   h1{
     text-align: center;
   }
+  
   p{
     text-align: justify;
   }
@@ -214,8 +218,6 @@ nav{
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-
-
 }
 
 .hero-section{
@@ -297,14 +299,14 @@ nav{
     color: white;
   }
 
-  .background-wrapper{
+.background-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr; 
     place-content: center;
     align-items: center;
   }
 
-  .text-wrapper{
+.text-wrapper{
     display: flex;
     flex-direction: column;
   }
@@ -318,6 +320,7 @@ nav{
   .reg-buttons::selection{
     outline: none;
   }
+  
   @media (max-width: 700px) {
     padding: 6vh 5vw;
     .background-wrapper{
@@ -346,7 +349,7 @@ nav{
     text-align: left;
   }
 
-  .eventTitle{
+.eventTitle{
     text-align: center;
     color: $indigo;
   }
@@ -355,7 +358,7 @@ nav{
     background-color: $indigo;
   }
 
-  .row{
+.row{
     padding: 5px 0;
     &:hover{
       background-color: rgba($lighter-purple, 0.15);
