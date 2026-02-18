@@ -62,6 +62,19 @@ p{
   transition: cubic-bezier(0.22, 1, 0.36, 1), transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   background-color: rgba(255,255,255,0.5);
 
+  @media (max-width: 768px) {
+  .schedule, 
+  .about, 
+  .faq, 
+  .sponsors, 
+  .footer, 
+  .location, 
+  .speakers {
+    width: 92vw;
+    padding: 10vh 6vw;
+    }
+  }
+
   h1 {
     margin-bottom: 30px;
   }
@@ -610,4 +623,4 @@ nav{
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
       }
-    }
+}
