@@ -124,7 +124,7 @@ nav{
       bottom: 8px;
       width: 0;
       height: 2px;
-      background-color: $indigo;
+      background-color: $lighter-purple;
       transition: width 0.3s ease, left 0.3s ease;
     }
 
@@ -139,7 +139,7 @@ nav{
     }
 
   a.with-background{
-    color: white;
+    color: indigo;
     &:hover{
       text-decoration: none;
       color: $indigo;
