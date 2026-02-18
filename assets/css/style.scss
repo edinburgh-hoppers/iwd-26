@@ -85,7 +85,7 @@ nav{
   font-size: 15pt;
   transition: background-color 0.3s;
   backdrop-filter: blur(8px);
-  background-color: rgba(218, 212, 255, 0.85);
+  background-color: rgba(218, 212, 255, 0.0);
   
   .right, .left{
     height: inherit;
@@ -113,7 +113,7 @@ nav{
     &:hover{
      text-decoration: none;
      color: $indigo;
-     background-color: rgba(172, 158, 255, 0.6);
+     background-color: $lighter-purple;
      transform: translateY(-2px);
     }
 
