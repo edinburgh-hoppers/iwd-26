@@ -234,6 +234,8 @@ nav{
 
 .hero-floating-shape {
   position: absolute;
+  z-index: -1;
+  pointer-events: none;
   width: 150px;
   height: 150px;
   border-radius: 50%;
