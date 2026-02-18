@@ -29,12 +29,16 @@ html {
 }
 
 body{
-  background-color: #DAD4FF;
   margin: 0;
   font-family: 'Dosis', sans-serif;
   display: grid;
   place-content: center;
   overflow-x: hidden;
+
+  /* Gradient background */
+  background: linear-gradient(45deg, #CEC7FF, #cbf1f7, #AC9EFF, #DAD4FF);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
 }
 
 @keyframes gradientShift {
@@ -239,9 +243,6 @@ nav{
   place-content: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(45deg, #CEC7FF, #cbf1f7, #AC9EFF);
-  background-size: 600% 600%;
-  animation: gradientShift 15s ease infinite;
 
   p {
     opacity: 0.85;
@@ -251,6 +252,9 @@ nav{
     letter-spacing: 0.04em;
     font-weight: 700;
     font-size: 40pt;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeSlideIn 1s ease forwards;
   }
 
   img {
@@ -342,6 +346,14 @@ nav{
       justify-self: center;
     }
   }
+}
+
+.hero-section img {
+  transition: transform 0.2s ease-out;
+}
+
+.hero-section:hover img {
+  transform: translateY(-10px);
 }
 
 .schedule{
