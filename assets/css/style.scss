@@ -37,6 +37,12 @@ body{
   overflow-x: hidden;
 }
 
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 p{
   font-size: 14pt;
 }
@@ -233,6 +239,9 @@ nav{
   place-content: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(45deg, #CEC7FF, #cbf1f7, #AC9EFF);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
 
   p {
     opacity: 0.85;
